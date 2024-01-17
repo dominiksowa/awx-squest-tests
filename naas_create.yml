@@ -1,1 +1,13 @@
+- name: NaaS Create
+  hosts: all
+  tasks:
+    - name: Start
+      debug:
+        msg: "Stariting NaaS Create"
+    - name: Print the job template survey variable
+      debug:
+        var: vCPU
 
+    - name: Print info sent by Squest
+      debug:
+        var: squest        
